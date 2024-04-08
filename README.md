@@ -3,7 +3,7 @@
 1. Run the application via `dotnet run`
 2. Copy the URL from the browser.
 3. Change `https://` to `wss://` and add this URL to postman as Socket connection.
-4. Run the following command in the Postman:
+4. Run the following command in the Postman (COPY IT DIRECTLY FROM HERE!!):
 5. `{"protocol":"json","version":1}
     {
         "type": 1,
