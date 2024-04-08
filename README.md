@@ -19,9 +19,9 @@
 We can receive the whole big request with signalR connectionId (clientId) via API, split it into so many requests so we want to, and send them via sockets, using this connectionId, as soon as they are completed.
 
 # Class overview
-IMessageHub - interface for custom SignalR hub
-MessageHubClient - client, which uses type-specified SignalR hub, which uses the IMessageHub interface. You can directly call this class from WebSocket to receive the ConnectionId (ClientId).
-Controllers/ProductOfferController - Controller, which provides an API to make big requests, which will make responses via SignalR.
+- IMessageHub - interface for custom SignalR hub
+- MessageHubClient - client, which uses type-specified SignalR hub, which uses the IMessageHub interface. You can directly call this class from WebSocket to receive the ConnectionId (ClientId).
+- Controllers/ProductOfferController - Controller, which provides an API to make big requests, which will make responses via SignalR.
 
 
    
