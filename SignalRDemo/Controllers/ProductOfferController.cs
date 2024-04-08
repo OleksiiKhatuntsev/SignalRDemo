@@ -5,7 +5,7 @@ namespace SignalRDemo.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	public class ProductOfferController(IHubContext<MessageHub, IMessageHubClient> messageHub, IHttpContextAccessor httpContextAccessor) : ControllerBase
+	public class ProductOfferController(IHubContext<MessageHub, IMessageHubClient> messageHub) : ControllerBase
 	{
 		[HttpPost]
 		[Route("productoffers")]
@@ -20,14 +20,6 @@ namespace SignalRDemo.Controllers
 			messageHub.Clients.All.SendOffersToUser(offers);
 			return "Offers sent successfully to all users!";
 		}
-		//
-		// [HttpGet]
-		// public void GetClientId()
-		// {
-		// 	var myHubContext = httpContextAccessor.HttpContext.RequestServices
-		// 		.GetRequiredService<IHubContext<MessageHub>>();
-		// 	messageHub.GetClientId();
-		// }
 
 		[HttpGet]
 		public void GetSpecificClient([FromQuery] string connectionId)
