@@ -15,11 +15,14 @@ builder.Services.AddCors(options =>
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddSignalR((o =>
+builder.Services.AddSwaggerGen(c =>
+{
+	c.EnableAnnotations();
+});
+builder.Services.AddSignalR(o =>
 {
 	o.EnableDetailedErrors = true;
-}));
+});
 builder.Services.AddSingleton<IUserConnector, UserConnector>();
 var app = builder.Build();
 // Configure the HTTP request pipeline.

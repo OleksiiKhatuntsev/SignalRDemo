@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace SignalRDemo.Controllers
 {
@@ -7,55 +8,52 @@ namespace SignalRDemo.Controllers
 	[ApiController]
 	public class ProductOfferController(IHubContext<MessageHub, IMessageHubClient> messageHub, IUserConnector userConnector) : ControllerBase
 	{
-		[HttpPost]
-		[Route("NotifyAll")]
-		public async Task<string> Get()
-		{
-			var offers = new List<string>
-			{
-				"15% Off on HP Pavillion",
-				"20% Off on IPhone 12",
-				"25% Off on Samsung Smart TV"
-			};
-            await messageHub.Clients.All.SendOffersToUser(offers);
-			return "Offers sent successfully to all users!";
-		}
-
         [HttpGet]
         [Route("[action]")]
-		public async Task<string> NotifyAllViaDataByTenantId(int tenantId)
+        [SwaggerOperation("Returns data across ALL connections by tenantId (4, 13, 16 ONLY!)")]
+        public async Task<string> NotifyAllViaDataByTenantId(int tenantId)
 		{
-			using StreamReader sr = new StreamReader($"Data\\hierarchy_{tenantId}.json");
+			using StreamReader sr = new ($"Data\\hierarchy_{tenantId}.json");
 			var fileData = await sr.ReadToEndAsync();
 			await messageHub.Clients.All.SendStringToUser(fileData);
 			return "Notified";
 		}
 
-        [HttpGet]
-        [Route("[action]")]
-        public async Task<string> GetByUserName(string userName)
-        {
-            var offers = new List<string>
-            {
-                "15% Off on HP Pavillion",
-                "20% Off on IPhone 12",
-                "25% Off on Samsung Smart TV"
-            };
-            await messageHub.Clients.Client(userConnector.GetConnectionForUser(userName)).SendOffersToUser(offers);
-            return "asd";
+		[HttpGet]
+		[Route("[action]")]
+		[SwaggerOperation("Returns data across ALL connections FOR ALL hierarchies (4, 13, 16 ONLY!). With simulating waiting")]
+        public async Task<string> SendAllHierarchies()
+		{
+			using (StreamReader sr = new StreamReader("Data\\hierarchy_4.json"))
+			{
+				var fileData = await sr.ReadToEndAsync();
+				await messageHub.Clients.All.SendStringToUser(fileData);
+			}
+			Thread.Sleep(TimeSpan.FromMilliseconds(5000));
+            using (StreamReader sr = new StreamReader("Data\\hierarchy_13.json"))
+			{
+				var fileData = await sr.ReadToEndAsync();
+				await messageHub.Clients.All.SendStringToUser(fileData);
+            }
+			Thread.Sleep(TimeSpan.FromMilliseconds(5000));
+			using (StreamReader sr = new StreamReader("Data\\hierarchy_16.json"))
+			{
+				var fileData = await sr.ReadToEndAsync();
+				await messageHub.Clients.All.SendStringToUser(fileData);
+			}
+
+			return "Notified";
         }
 
         [HttpGet]
         [Route("[action]")]
-        public async Task GetSpecificClient([FromQuery] string connectionId)
+        [SwaggerOperation("Returns data across connection for specified User by tenantId (4, 13, 16 ONLY!)")]
+        public async Task<string> NotifyTenantByIdAndUserName(string tenantId, string userName)
         {
-            var offers = new List<string>
-            {
-                "15% Off on HP Pavillion",
-                "20% Off on IPhone 12",
-                "25% Off on Samsung Smart TV"
-            };
-            await messageHub.Clients.Client(connectionId).SendOffersToUser(offers);
+	        using StreamReader sr = new($"Data\\hierarchy_{tenantId}.json");
+	        var fileData = await sr.ReadToEndAsync();
+            await messageHub.Clients.Client(userConnector.GetConnectionForUser(userName)).SendStringToUser(fileData);
+            return "Notified";
         }
     }
 }
