@@ -6,7 +6,7 @@ namespace SignalRDemo.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	public class ProductOfferController(IHubContext<MessageHub, IMessageHubClient> messageHub, IUserConnector userConnector) : ControllerBase
+	public class HierarchyController(IHubContext<MessageHub, IMessageHubClient> messageHub, IUserConnector userConnector) : ControllerBase
 	{
         [HttpGet]
         [Route("[action]")]
