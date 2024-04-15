@@ -4,7 +4,7 @@
     {
         Task SendOffersToUser(List<string> messages);
 
-        Task SendStringToUser(string message);
+        Task SendStringToUser(dynamic obj);
 
         Task SendClientId(string clientId);
     }
