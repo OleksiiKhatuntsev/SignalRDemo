@@ -8,7 +8,7 @@ namespace SignalRDemo.Controllers
 	public class ProductOfferController(IHubContext<MessageHub, IMessageHubClient> messageHub, IUserConnector userConnector) : ControllerBase
 	{
 		[HttpPost]
-		[Route("productoffers")]
+		[Route("NotifyAll")]
 		public async Task<string> Get()
 		{
 			var offers = new List<string>
@@ -17,12 +17,22 @@ namespace SignalRDemo.Controllers
 				"20% Off on IPhone 12",
 				"25% Off on Samsung Smart TV"
 			};
-			await messageHub.Clients.All.SendOffersToUser(offers);
+            await messageHub.Clients.All.SendOffersToUser(offers);
 			return "Offers sent successfully to all users!";
 		}
 
         [HttpGet]
-        [Route("asd")]
+        [Route("[action]")]
+		public async Task<string> NotifyAllViaDataByTenantId(int tenantId)
+		{
+			using StreamReader sr = new StreamReader($"Data\\hierarchy_{tenantId}.json");
+			var fileData = await sr.ReadToEndAsync();
+			await messageHub.Clients.All.SendStringToUser(fileData);
+			return "Notified";
+		}
+
+        [HttpGet]
+        [Route("[action]")]
         public async Task<string> GetByUserName(string userName)
         {
             var offers = new List<string>
@@ -36,7 +46,7 @@ namespace SignalRDemo.Controllers
         }
 
         [HttpGet]
-        [Route("asdasd")]
+        [Route("[action]")]
         public async Task GetSpecificClient([FromQuery] string connectionId)
         {
             var offers = new List<string>

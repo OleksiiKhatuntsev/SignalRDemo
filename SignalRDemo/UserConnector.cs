@@ -2,12 +2,12 @@
 {
     public class UserConnector : IUserConnector
     {
-        private Dictionary<string, string> userConnections = new Dictionary<string, string>();
+        private readonly Dictionary<string, string> userConnections = [];
 
         public string GetConnectionForUser(string userName)
             => userConnections[userName];
 
-        public void OnConnection(string userName, string connectionId) 
+        public void OnConnection(string userName, string connectionId)
             => userConnections[userName] = connectionId;
     }
 }
