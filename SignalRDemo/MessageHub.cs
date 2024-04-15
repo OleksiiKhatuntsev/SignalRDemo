@@ -19,6 +19,5 @@ public class MessageHub(IUserConnector userConnector) : Hub<IMessageHubClient>
 	{
 		userConnector.OnConnection(userName, Context.ConnectionId);
 		await Clients.Caller.SendClientId(Context.ConnectionId + userName);
-
     }
 }
