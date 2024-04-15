@@ -12,8 +12,8 @@ namespace SignalRDemo.Controllers
     {
         [HttpGet]
         [Route("[action]")]
-        [SwaggerOperation("Returns problemSolving for tenant №4")]
-        public async Task<string> GetProblemSolving(int tenantId = 4)
+        [SwaggerOperation("Returns problemSolving for tenant №16")]
+        public async Task<string> GetProblemSolving(int tenantId = 16)
         {
             var fileData = System.IO.File.ReadAllText($"Data\\problem_solving_{tenantId}.json");
             dynamic result = JObject.Parse(fileData);

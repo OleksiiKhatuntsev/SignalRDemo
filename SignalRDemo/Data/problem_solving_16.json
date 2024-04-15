@@ -1,0 +1,1702 @@
+{
+  "kpiId": 1,
+  "title": "Teacher Attendance",
+  "pageSubHeadingOverride": null,
+  "selectedTimePeriodOverride": null,
+  "entityId": "BY000034",
+  "entityType": "Employee",
+  "kpiResults": [
+    {
+      "id": 1,
+      "name": "Attendance",
+      "period": "LastSevenWorkingDays",
+      "kpis": [
+        {
+          "id": 1,
+          "valueIsPercentage": true,
+          "valueIsBoolean": false,
+          "valueHigherIsBetter": true,
+          "valueIsRatioKpi": false,
+          "name": "PercentageTeachersPresent",
+          "period": "LastSevenWorkingDays",
+          "periodId": "LastSevenWorkingDays",
+          "periodLabel": "LastSevenWorkingDays",
+          "value": 0.76,
+          "change": 0.01,
+          "hasProblemSolving": true,
+          "sortOrder": 5,
+          "threshold": "2-4",
+          "categoryId": 1,
+          "entity": "Team",
+          "entityId": "",
+          "labelOverride": null,
+          "hidePerformanceDisplay": false,
+          "thresholdValue": "ApproachingExpectations",
+          "highlightScore": 0,
+          "lowlightScore": 0,
+          "linkOverride": null
+        },
+        {
+          "id": 2,
+          "valueIsPercentage": true,
+          "valueIsBoolean": false,
+          "valueHigherIsBetter": true,
+          "valueIsRatioKpi": false,
+          "name": "TeachersArrivedDeparted",
+          "period": "LastSevenWorkingDays",
+          "periodId": "LastSevenWorkingDays",
+          "periodLabel": "LastSevenWorkingDays",
+          "value": 0.34,
+          "change": -0.06,
+          "hasProblemSolving": true,
+          "sortOrder": 6,
+          "threshold": "1-4",
+          "categoryId": 1,
+          "entity": "Team",
+          "entityId": "",
+          "labelOverride": null,
+          "hidePerformanceDisplay": false,
+          "thresholdValue": "BelowExpectations",
+          "highlightScore": 0,
+          "lowlightScore": 0,
+          "linkOverride": null
+        }
+      ]
+    }
+  ],
+  "contributingKpis": [
+    {
+      "id": 0,
+      "name": null,
+      "period": "LastSevenWorkingDays",
+      "kpis": [
+        {
+          "id": 2,
+          "valueIsPercentage": true,
+          "valueIsBoolean": false,
+          "valueHigherIsBetter": true,
+          "valueIsRatioKpi": false,
+          "name": "TeachersArrivedDeparted",
+          "period": "LastSevenWorkingDays",
+          "periodId": "LastSevenWorkingDays",
+          "periodLabel": "LastSevenWorkingDays",
+          "value": 0.34,
+          "change": -0.06,
+          "hasProblemSolving": false,
+          "sortOrder": 1,
+          "threshold": "1-4",
+          "categoryId": 0,
+          "entity": null,
+          "entityId": null,
+          "labelOverride": null,
+          "hidePerformanceDisplay": false,
+          "thresholdValue": "BelowExpectations",
+          "highlightScore": 0,
+          "lowlightScore": 0,
+          "linkOverride": null
+        },
+        {
+          "id": 3,
+          "valueIsPercentage": true,
+          "valueIsBoolean": false,
+          "valueHigherIsBetter": true,
+          "valueIsRatioKpi": false,
+          "name": "SchoolLeadersPresent",
+          "period": "LastSevenWorkingDays",
+          "periodId": "LastSevenWorkingDays",
+          "periodLabel": "LastSevenWorkingDays",
+          "value": 0.91,
+          "change": null,
+          "hasProblemSolving": false,
+          "sortOrder": 2,
+          "threshold": "3-4",
+          "categoryId": 0,
+          "entity": null,
+          "entityId": null,
+          "labelOverride": null,
+          "hidePerformanceDisplay": false,
+          "thresholdValue": "MeetsExpectations",
+          "highlightScore": 0,
+          "lowlightScore": 0,
+          "linkOverride": null
+        },
+        {
+          "id": 1,
+          "valueIsPercentage": true,
+          "valueIsBoolean": false,
+          "valueHigherIsBetter": true,
+          "valueIsRatioKpi": false,
+          "name": "PercentageTeachersPresent",
+          "period": "LastSevenWorkingDays",
+          "periodId": "LastSevenWorkingDays",
+          "periodLabel": "LastSevenWorkingDays",
+          "value": 0.76,
+          "change": 0.01,
+          "hasProblemSolving": false,
+          "sortOrder": 3,
+          "threshold": "2-4",
+          "categoryId": 0,
+          "entity": null,
+          "entityId": null,
+          "labelOverride": null,
+          "hidePerformanceDisplay": false,
+          "thresholdValue": "ApproachingExpectations",
+          "highlightScore": 0,
+          "lowlightScore": 0,
+          "linkOverride": null
+        },
+        {
+          "id": 14,
+          "valueIsPercentage": true,
+          "valueIsBoolean": false,
+          "valueHigherIsBetter": true,
+          "valueIsRatioKpi": false,
+          "name": "TeachersArrivedOnTime",
+          "period": "LastSevenWorkingDays",
+          "periodId": "LastSevenWorkingDays",
+          "periodLabel": "LastSevenWorkingDays",
+          "value": 0.43,
+          "change": null,
+          "hasProblemSolving": false,
+          "sortOrder": 4,
+          "threshold": "1-4",
+          "categoryId": 0,
+          "entity": null,
+          "entityId": null,
+          "labelOverride": null,
+          "hidePerformanceDisplay": false,
+          "thresholdValue": "BelowExpectations",
+          "highlightScore": 0,
+          "lowlightScore": 0,
+          "linkOverride": null
+        },
+        {
+          "id": 15,
+          "valueIsPercentage": true,
+          "valueIsBoolean": false,
+          "valueHigherIsBetter": true,
+          "valueIsRatioKpi": false,
+          "name": "TeachersDepartedOnTime",
+          "period": "LastSevenWorkingDays",
+          "periodId": "LastSevenWorkingDays",
+          "periodLabel": "LastSevenWorkingDays",
+          "value": 0.53,
+          "change": null,
+          "hasProblemSolving": false,
+          "sortOrder": 5,
+          "threshold": "1-4",
+          "categoryId": 0,
+          "entity": null,
+          "entityId": null,
+          "labelOverride": null,
+          "hidePerformanceDisplay": false,
+          "thresholdValue": "BelowExpectations",
+          "highlightScore": 0,
+          "lowlightScore": 0,
+          "linkOverride": null
+        }
+      ]
+    }
+  ],
+  "insights": [],
+  "problemSolvingTabularData": [
+    {
+      "period": "LastWorkingDay",
+      "group": "Thursday, 28 March 2024",
+      "flagKeyText": null,
+      "tableData": {
+        "firstColIsHeading": true,
+        "fields": [
+          {
+            "class": null,
+            "key": "employee",
+            "label": "Name",
+            "format": null,
+            "sticky": true,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentPresent",
+            "label": "% Teachers Present",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentArrivedOnTime",
+            "label": "% Teachers Arrived On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentDepartedOnTime",
+            "label": "% Teachers Departed On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "termView",
+            "label": "Term View",
+            "format": "icon",
+            "sticky": false,
+            "sortable": false,
+            "wrappable": true
+          }
+        ],
+        "data": [
+          {
+            "employee": {
+              "value": "Felix Oghenefega Oghenerhovweya",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000019/1"
+            },
+            "percentPresent": {
+              "value": 0.67,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0.28,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0.15,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000019"
+            }
+          },
+          {
+            "employee": {
+              "value": "Chimezie Chris Iwuoha",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000028/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000028"
+            }
+          },
+          {
+            "employee": {
+              "value": "Muhammed Olashile Musa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000032/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000032"
+            }
+          },
+          {
+            "employee": {
+              "value": "Mary Onyemechi Adubifa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY002196/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY002196"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "period": "LastWorkingDay",
+      "group": "Wednesday, 27 March 2024",
+      "flagKeyText": null,
+      "tableData": {
+        "firstColIsHeading": true,
+        "fields": [
+          {
+            "class": null,
+            "key": "employee",
+            "label": "Name",
+            "format": null,
+            "sticky": true,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentPresent",
+            "label": "% Teachers Present",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentArrivedOnTime",
+            "label": "% Teachers Arrived On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentDepartedOnTime",
+            "label": "% Teachers Departed On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "termView",
+            "label": "Term View",
+            "format": "icon",
+            "sticky": false,
+            "sortable": false,
+            "wrappable": true
+          }
+        ],
+        "data": [
+          {
+            "employee": {
+              "value": "Felix Oghenefega Oghenerhovweya",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000019/1"
+            },
+            "percentPresent": {
+              "value": 0.66,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0.38,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0.46,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000019"
+            }
+          },
+          {
+            "employee": {
+              "value": "Chimezie Chris Iwuoha",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000028/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000028"
+            }
+          },
+          {
+            "employee": {
+              "value": "Muhammed Olashile Musa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000032/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000032"
+            }
+          },
+          {
+            "employee": {
+              "value": "Mary Onyemechi Adubifa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY002196/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY002196"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "period": "LastWorkingDay",
+      "group": "Tuesday, 26 March 2024",
+      "flagKeyText": null,
+      "tableData": {
+        "firstColIsHeading": true,
+        "fields": [
+          {
+            "class": null,
+            "key": "employee",
+            "label": "Name",
+            "format": null,
+            "sticky": true,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentPresent",
+            "label": "% Teachers Present",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentArrivedOnTime",
+            "label": "% Teachers Arrived On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentDepartedOnTime",
+            "label": "% Teachers Departed On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "termView",
+            "label": "Term View",
+            "format": "icon",
+            "sticky": false,
+            "sortable": false,
+            "wrappable": true
+          }
+        ],
+        "data": [
+          {
+            "employee": {
+              "value": "Felix Oghenefega Oghenerhovweya",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000019/1"
+            },
+            "percentPresent": {
+              "value": 0.7,
+              "thresholdClass": "2-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0.43,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0.51,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000019"
+            }
+          },
+          {
+            "employee": {
+              "value": "Chimezie Chris Iwuoha",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000028/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000028"
+            }
+          },
+          {
+            "employee": {
+              "value": "Muhammed Olashile Musa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000032/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000032"
+            }
+          },
+          {
+            "employee": {
+              "value": "Mary Onyemechi Adubifa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY002196/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY002196"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "period": "LastWorkingDay",
+      "group": "Monday, 25 March 2024",
+      "flagKeyText": null,
+      "tableData": {
+        "firstColIsHeading": true,
+        "fields": [
+          {
+            "class": null,
+            "key": "employee",
+            "label": "Name",
+            "format": null,
+            "sticky": true,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentPresent",
+            "label": "% Teachers Present",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentArrivedOnTime",
+            "label": "% Teachers Arrived On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentDepartedOnTime",
+            "label": "% Teachers Departed On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "termView",
+            "label": "Term View",
+            "format": "icon",
+            "sticky": false,
+            "sortable": false,
+            "wrappable": true
+          }
+        ],
+        "data": [
+          {
+            "employee": {
+              "value": "Felix Oghenefega Oghenerhovweya",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000019/1"
+            },
+            "percentPresent": {
+              "value": 0.83,
+              "thresholdClass": "2-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0.43,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0.57,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000019"
+            }
+          },
+          {
+            "employee": {
+              "value": "Chimezie Chris Iwuoha",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000028/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000028"
+            }
+          },
+          {
+            "employee": {
+              "value": "Muhammed Olashile Musa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000032/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000032"
+            }
+          },
+          {
+            "employee": {
+              "value": "Mary Onyemechi Adubifa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY002196/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY002196"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "period": "LastWorkingDay",
+      "group": "Friday, 22 March 2024",
+      "flagKeyText": null,
+      "tableData": {
+        "firstColIsHeading": true,
+        "fields": [
+          {
+            "class": null,
+            "key": "employee",
+            "label": "Name",
+            "format": null,
+            "sticky": true,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentPresent",
+            "label": "% Teachers Present",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentArrivedOnTime",
+            "label": "% Teachers Arrived On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentDepartedOnTime",
+            "label": "% Teachers Departed On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "termView",
+            "label": "Term View",
+            "format": "icon",
+            "sticky": false,
+            "sortable": false,
+            "wrappable": true
+          }
+        ],
+        "data": [
+          {
+            "employee": {
+              "value": "Felix Oghenefega Oghenerhovweya",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000019/1"
+            },
+            "percentPresent": {
+              "value": 0.85,
+              "thresholdClass": "3-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0.52,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0.63,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000019"
+            }
+          },
+          {
+            "employee": {
+              "value": "Chimezie Chris Iwuoha",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000028/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000028"
+            }
+          },
+          {
+            "employee": {
+              "value": "Muhammed Olashile Musa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000032/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000032"
+            }
+          },
+          {
+            "employee": {
+              "value": "Mary Onyemechi Adubifa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY002196/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY002196"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "period": "LastWorkingDay",
+      "group": "Thursday, 21 March 2024",
+      "flagKeyText": null,
+      "tableData": {
+        "firstColIsHeading": true,
+        "fields": [
+          {
+            "class": null,
+            "key": "employee",
+            "label": "Name",
+            "format": null,
+            "sticky": true,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentPresent",
+            "label": "% Teachers Present",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentArrivedOnTime",
+            "label": "% Teachers Arrived On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentDepartedOnTime",
+            "label": "% Teachers Departed On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "termView",
+            "label": "Term View",
+            "format": "icon",
+            "sticky": false,
+            "sortable": false,
+            "wrappable": true
+          }
+        ],
+        "data": [
+          {
+            "employee": {
+              "value": "Felix Oghenefega Oghenerhovweya",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000019/1"
+            },
+            "percentPresent": {
+              "value": 0.88,
+              "thresholdClass": "3-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0.52,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0.71,
+              "thresholdClass": "2-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000019"
+            }
+          },
+          {
+            "employee": {
+              "value": "Chimezie Chris Iwuoha",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000028/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000028"
+            }
+          },
+          {
+            "employee": {
+              "value": "Muhammed Olashile Musa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000032/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000032"
+            }
+          },
+          {
+            "employee": {
+              "value": "Mary Onyemechi Adubifa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY002196/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY002196"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "period": "LastWorkingDay",
+      "group": "Wednesday, 20 March 2024",
+      "flagKeyText": null,
+      "tableData": {
+        "firstColIsHeading": true,
+        "fields": [
+          {
+            "class": null,
+            "key": "employee",
+            "label": "Name",
+            "format": null,
+            "sticky": true,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentPresent",
+            "label": "% Teachers Present",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentArrivedOnTime",
+            "label": "% Teachers Arrived On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentDepartedOnTime",
+            "label": "% Teachers Departed On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "termView",
+            "label": "Term View",
+            "format": "icon",
+            "sticky": false,
+            "sortable": false,
+            "wrappable": true
+          }
+        ],
+        "data": [
+          {
+            "employee": {
+              "value": "Felix Oghenefega Oghenerhovweya",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000019/1"
+            },
+            "percentPresent": {
+              "value": 0.75,
+              "thresholdClass": "2-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0.45,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0.68,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000019"
+            }
+          },
+          {
+            "employee": {
+              "value": "Chimezie Chris Iwuoha",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000028/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000028"
+            }
+          },
+          {
+            "employee": {
+              "value": "Muhammed Olashile Musa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000032/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000032"
+            }
+          },
+          {
+            "employee": {
+              "value": "Mary Onyemechi Adubifa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY002196/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY002196"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "period": "LastSevenWorkingDays",
+      "group": "LastSevenWorkingDays",
+      "flagKeyText": null,
+      "tableData": {
+        "firstColIsHeading": true,
+        "fields": [
+          {
+            "class": null,
+            "key": "employee",
+            "label": "Name",
+            "format": null,
+            "sticky": true,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentPresent",
+            "label": "% Teachers Present",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentArrivedOnTime",
+            "label": "% Teachers Arrived On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "percentDepartedOnTime",
+            "label": "% Teachers Departed On Time",
+            "format": "percent",
+            "sticky": false,
+            "sortable": true,
+            "wrappable": true
+          },
+          {
+            "class": null,
+            "key": "termView",
+            "label": "Term View",
+            "format": "icon",
+            "sticky": false,
+            "sortable": false,
+            "wrappable": true
+          }
+        ],
+        "data": [
+          {
+            "employee": {
+              "value": "Felix Oghenefega Oghenerhovweya",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000019/1"
+            },
+            "percentPresent": {
+              "value": 0.76,
+              "thresholdClass": "2-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0.43,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0.53,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000019"
+            }
+          },
+          {
+            "employee": {
+              "value": "Chimezie Chris Iwuoha",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000028/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000028"
+            }
+          },
+          {
+            "employee": {
+              "value": "Muhammed Olashile Musa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY000032/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY000032"
+            }
+          },
+          {
+            "employee": {
+              "value": "Mary Onyemechi Adubifa",
+              "icon": "employee",
+              "flag": false,
+              "href": "/problemSolving/Employee/BY002196/1"
+            },
+            "percentPresent": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentArrivedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "percentDepartedOnTime": {
+              "value": 0,
+              "thresholdClass": "1-4",
+              "thresholdText": null
+            },
+            "termView": {
+              "value": "calendar",
+              "icon": null,
+              "flag": false,
+              "href": "/Calendar/TeacherAttendance/Employee/BY002196"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "problemSolvingChartData": [
+    {
+      "period": "LastSevenWorkingDays",
+      "chartData": {
+        "keys": [
+          {
+            "key": "teachersArrivedDeparted",
+            "legend": "TeachersArrivedDeparted",
+            "appearance": "bar"
+          },
+          {
+            "key": "schoolLeadersPresent",
+            "legend": "SchoolLeadersPresent",
+            "appearance": "bar"
+          },
+          {
+            "key": "percentageTeachersPresent",
+            "legend": "PercentageTeachersPresent",
+            "appearance": "bar"
+          },
+          {
+            "key": "teachersArrivedOnTime",
+            "legend": "TeachersArrivedOnTime",
+            "appearance": "bar"
+          },
+          {
+            "key": "teachersDepartedOnTime",
+            "legend": "TeachersDepartedOnTime",
+            "appearance": "bar"
+          }
+        ],
+        "data": []
+      }
+    },
+    {
+      "period": "TermOnTerm",
+      "chartData": {
+        "keys": [
+          {
+            "key": "teachersArrivedDeparted",
+            "legend": "TeachersArrivedDeparted",
+            "appearance": "bar"
+          },
+          {
+            "key": "schoolLeadersPresent",
+            "legend": "SchoolLeadersPresent",
+            "appearance": "bar"
+          },
+          {
+            "key": "percentageTeachersPresent",
+            "legend": "PercentageTeachersPresent",
+            "appearance": "bar"
+          },
+          {
+            "key": "teachersArrivedOnTime",
+            "legend": "TeachersArrivedOnTime",
+            "appearance": "bar"
+          },
+          {
+            "key": "teachersDepartedOnTime",
+            "legend": "TeachersDepartedOnTime",
+            "appearance": "bar"
+          }
+        ],
+        "data": [
+          {
+            "label": "Term 2 2023",
+            "teachersArrivedDeparted": 28.999999999999996,
+            "schoolLeadersPresent": 85,
+            "percentageTeachersPresent": 72,
+            "teachersArrivedOnTime": 34,
+            "teachersDepartedOnTime": 56.99999999999999
+          },
+          {
+            "label": "Term 3 2023",
+            "teachersArrivedDeparted": 34,
+            "schoolLeadersPresent": 89,
+            "percentageTeachersPresent": 72,
+            "teachersArrivedOnTime": 38,
+            "teachersDepartedOnTime": 62
+          },
+          {
+            "label": "Term 1 2024",
+            "teachersArrivedDeparted": 28.999999999999996,
+            "schoolLeadersPresent": 86,
+            "percentageTeachersPresent": 67,
+            "teachersArrivedOnTime": 34,
+            "teachersDepartedOnTime": 51
+          },
+          {
+            "label": "Term 2 2024",
+            "teachersArrivedDeparted": 28.999999999999996,
+            "schoolLeadersPresent": 86,
+            "percentageTeachersPresent": 66,
+            "teachersArrivedOnTime": 34,
+            "teachersDepartedOnTime": 51
+          },
+          {
+            "label": "Term 3 2024",
+            "teachersArrivedDeparted": 36,
+            "schoolLeadersPresent": 92,
+            "percentageTeachersPresent": 73,
+            "teachersArrivedOnTime": 40,
+            "teachersDepartedOnTime": 62
+          }
+        ]
+      }
+    }
+  ],
+  "navigationOverride": null,
+  "ttdStartDate": "08 Jan 2024",
+  "ttdEndDate": "28 Mar 2024",
+  "lastWorkingDayDate": "28 Mar 2024",
+  "termNumber": "Term 2"
+}
