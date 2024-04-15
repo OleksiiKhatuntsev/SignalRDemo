@@ -2,7 +2,7 @@
 {
     public interface IMessageHubClient
     {
-        Task SendOffersToUser(List<string> message);
+        Task SendOffersToUser(List<string> messages);
 
         Task SendClientId(string clientId);
     }
