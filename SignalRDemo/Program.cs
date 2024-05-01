@@ -22,7 +22,8 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddSignalR(o =>
 {
 	o.EnableDetailedErrors = true;
-});
+}).AddStackExchangeRedis("localhost:6379");
+
 builder.Services.AddSingleton<IUserConnector, UserConnector>();
 var app = builder.Build();
 // Configure the HTTP request pipeline.

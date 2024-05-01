@@ -4,13 +4,13 @@ using Microsoft.AspNetCore.SignalR;
 
 public class MessageHub(IUserConnector userConnector) : Hub<IMessageHubClient>
 {
-	public async Task SendOffersToUser(List<string> messages)
+    public async Task SendOffersToUser()
 	{
-		await Clients.All.SendOffersToUser(messages);
+		await Clients.All.SendOffersToUser(new List<string> {"123"});
 	}
 
 	public async Task SendOffersToExactUser(string connectionId, List<string> messages)
-		=> await Clients.Client(connectionId).SendOffersToUser(messages); 
+		=> await Clients.Client(connectionId).SendOffersToUser(messages);
 
 	public async Task GetClientId()
 		=> await Clients.Caller.SendClientId(Context.ConnectionId);
